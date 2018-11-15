@@ -15,7 +15,7 @@ for item in page:
 
 #доступ к google docs
 scope = ['https://spreadsheets.google.com/feeds' , 'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('TestPython-c628e5e535bd.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('{свой файл json}', scope)
 gc = gspread.authorize(credentials)
 wks = gc.open('Test').sheet1
 
